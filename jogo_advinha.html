@@ -1,0 +1,91 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+var numeroPensado = 5;
+var chute = parseInt(prompt("Digite seu chute!"));
+
+if(chute == numeroPensado) {
+    mostra("Voce acertou!");
+}
+
+else {
+    mostra("Voce errou o numero pensado foi " + numeroPensado);
+}
+</script>
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+var numeroPensado = Math.round(Math.ramdon() * 10);
+var chute = parseInt(prompt("Digite seu chute!"));
+
+if(chute == numeroPensado) {
+    mostra("Voce acertou!");
+}
+
+else {
+    mostra("Voce errou o numero pensado foi " + numeroPensado);
+}
+
+mostra("FIM")
+</script>
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+var numeroPensado = Math.round(Math.ramdon() * 10);
+
+var tentativas = 1;
+
+while(tentativas <= 3){
+
+     var chute = parseInt(prompt("Digite seu chute!"));
+
+     if(chute == numeroPensado) {
+
+         mostra("Voce ACERTOU, o numero pensado era " + numeroPensado);
+         break;
+
+    } else {
+         mostra("Voce ERROU!");
+    }
+
+     tentativas++5
+}
+
+mostra("FIM")
+</script>

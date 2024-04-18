@@ -1,0 +1,274 @@
+<meta charset="UTF-8">
+
+ <script>
+
+    document.write("A idade do Flávio é ");
+    document.write("<br>");
+    document.write(18 + 20);
+
+ </script>
+<br>
+<br>
+ <script>
+
+    document.write("A  media das idades é ");
+    document.write((20 + 10 + 30)/3);
+
+ </script>
+<br>
+<br>
+ <script>
+
+    document.write("A  soma das idades é " + (20 + 10 + 30));
+
+ </script>
+<br>
+<br>
+ <script>
+
+    document.write("Carolyne nasceu em " + (2024 - 32));
+
+ </script>
+<br>
+<br>
+ <script>
+
+    document.write("Carolyne nasceu em " + (2024 - 32));
+    document.write("<br>");
+    document.write("Camila nasceu em " + (2024 - 31));
+    document.write("<br>");
+    document.write("Henrique nasceu em " + (2024 - 34));
+    document.write("<br>");
+
+ </script>
+<br>
+<br>
+ <script>
+
+    document.write("Carolyne tem " + (2024 - 1992) + " anos." +"<br>");
+    document.write("Camila tem " + (2024 - 1993)+ " anos." +"<br>");
+    document.write("Henrique tem " + (2024 - 1990) + " anos." +"<br>");
+
+ </script>
+<br>
+<br>
+ <script>
+
+   var ano = 2024;
+
+    document.write("Carolyne tem " + (ano - 1992) + " anos." +"<br>");
+    document.write("Camila tem " + (ano - 1993)+ " anos." +"<br>");
+    document.write("Henrique tem " + (ano - 1990) + " anos." +"<br>");
+
+ </script>
+<br>
+<br>
+ <script>
+
+var ano = 2024;
+
+    document.write("Carolyne tem " + (ano - 1992) + " anos.");
+    document.write("<br>");
+
+    ano = 2023;
+
+    document.write("Camila tem " + (ano - 1993) + " anos.");
+    document.write("<br>");
+    document.write("Henrique tem " + (ano - 1990) + " anos.");
+    document.write("<br>");
+
+    var media = (32 + 30 + 33)/3;
+
+    document.write("A media das idades é: " + Math.round(media));
+
+ </script>
+<br>
+<br>
+ <script>
+
+var ano = 2024;
+var puloLinha = "<br><br><br>"
+
+    document.write("Carolyne tem " + (ano - 1992) + " anos.");
+    document.write(puloLinha);
+
+    ano = 2023;
+
+    document.write("Camila tem " + (ano - 1993) + " anos.");
+    document.write(puloLinha);
+    document.write("Henrique tem " + (ano - 1990) + " anos.");
+    document.write(puloLinha);
+
+ </script> 
+<br>
+<br>
+ <script>
+
+function pularLinha() { 
+   document.write("<br>");
+   document.write("<br>");
+}
+
+var ano = 2024;
+
+    document.write("Carolyne tem " + (ano - 1992) + " anos.");
+   
+   pularLinha();
+
+    ano = 2023;
+
+    document.write("Camila tem " + (ano - 1993) + " anos.");
+    
+    pularLinha();
+
+    document.write("Henrique tem " + (ano - 1990) + " anos.");
+    
+    pularLinha();
+
+ </script>  
+<br>
+<br>
+ <script>
+
+function pularLinha() { 
+   document.write("<br>");
+   document.write("<br>");
+}
+function mostra(frase){
+   document.write(frase);
+   pularLinha();
+}
+
+var ano = 2024;
+
+   mostra("Carolyne tem " + (ano - 1992) + " anos.");
+
+    ano = 2023;
+
+   mostra("Camila tem " + (ano - 1993) + " anos.");
+    
+   mostra("Henrique tem " + (ano - 1990) + " anos.");
+    
+ </script>  
+<br>
+<br>
+ <script>
+
+function pularLinha() { 
+   document.write("<br>");
+   document.write("<br>");
+}
+function mostra(frase){
+   document.write(frase);
+   pularLinha();
+}
+function calculaImc(peso, altura) {
+   var imc = peso / (altura * altura);
+   mostra("O imc calculado e " + Math.round(imc));
+}
+
+calculaImc(98, 1.56);
+calculaImc(68, 1.72);
+    
+ </script>
+<br>
+<br>
+ <script>
+
+function pularLinha() { 
+   document.write("<br>");
+   document.write("<br>");
+}
+function mostra(frase){
+   document.write(frase);
+   pularLinha();
+}
+function calculaImc(peso1, altura1, peso2, altura2) {
+   var imc1 = peso1 / (altura1 * altura1);
+   var imc2 = peso2 / (altura2 * altura2);
+   var imcTotal = imc1 + imc2
+   mostra("A soma dos imc's e " + Math.round(imcTotal));
+}
+
+calculaImc(98, 1.56, 68, 1.72);
+    
+ </script>
+<br>
+<br>
+ <script>
+
+function pularLinha() { 
+   document.write("<br>");
+   document.write("<br>");
+}
+function mostra(frase){
+   document.write(frase);
+   pularLinha();
+}
+function calculaImc(altura, peso) {
+   var imc = peso / (altura * altura);
+   return imc;
+}
+
+var imcFlavio = calculaImc(1.71, 73);
+var imcAmigo = calculaImc(1.72, 68);
+
+mostra(imcFlavio);
+mostra(imcAmigo);
+    
+ </script>
+ <br>
+<br>
+ <script>
+
+function pularLinha() { 
+   document.write("<br>");
+   document.write("<br>");
+}
+function mostra(frase){
+   document.write(frase);
+   pularLinha();
+}
+function calculaImc(altura, peso) {
+   
+   return imc;
+}
+
+var imcFlavio = calculaImc(1.71, 73);
+var imcAmigo = calculaImc(1.72, 68);
+
+mostra(imcFlavio);
+mostra(imcAmigo);
+    
+ </script>   
+ <meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+    function calculaImc(altura, peso) {
+
+        return peso / (altura * altura);
+}
+
+var nome = prompt("Informe o seu nome");
+var alturaInformada = prompt(nome + ", Informe sua altura");
+var pesoInformado = prompt(nome + ", Informe seu peso");
+
+var imc = calculaImc(alturaInformada, pesoInformado);
+
+document.write(nome + ", o seu IMC calculado é " + imc);
+
+
+</script>              
